@@ -64,6 +64,47 @@
   <header>
     
       <div class="icon"></div>
+      <a href="/2014/08/01/config-about-chinese/">
+  <time datetime="2014-08-01T12:17:23.000Z">
+    2014-08-1
+  </time>
+</a>
+    
+    
+  
+    <h1 class="title"><a href="/2014/08/01/config-about-chinese/">config about chinese</a></h1>
+  
+
+  </header>
+  
+  <div class="entry">
+    
+      <p>1、Git Bash 中输入 ls 命令，可以正常显示中文文件名：</p>
+<p>修改%Gi%t\etc\git-completion.bash，如果没有则在末尾添加下面一行：</p>
+<p>alias ls=’ls —show-control-chars —color=auto’<br>2、在Git Bash 中可以正常输入中文：<br>修改%Git%\etc\inputrc，修改配置项如下：</p>
+<p>set output-meta on</p>
+<p>set convert-meta off<br>3、Git Bash中查看日志是能正常显示中文：<br>修改%Git%\etc\profile，在末尾添加如下一行：</p>
+<p>export LESSCHARSET=utf-8<br>4、在git gui 中正常显示代码中的中文：<br>修改%Git%\etc\gitconfig，添加如下配置项（如果代码文件是gb2312编码，就填gb2312）<br>[gui]<br>encoding = utf-8<br>5、正常显示推、拉中文修订说明</p>
+<p>修改%Git%\etc\gitconfig，添加如下配置项<br>[i18n]<br>commitencoding = GB2312</p>
+<p>说明：若没有此项存在两个问题，一、我们推到服务器的中文修订说明会变成乱码；二、我们从服务器拉下来的别人推上去的中文修订说明也会是乱码。</p>
+
+    
+  </div>
+  <footer class="end-sep">
+    
+      
+      
+    
+    <div class="clearfix"></div>
+  </footer>
+</article>
+
+
+  
+    <article class="post">
+  <header>
+    
+      <div class="icon"></div>
       <a href="/2014/08/01/my-third-post/">
   <time datetime="2014-08-01T08:34:18.000Z">
     2014-08-1
@@ -280,7 +321,7 @@
 
 
 <script type="text/javascript">
-  var duoshuoQuery = { short_name: 'sgyh' };
+  var duoshuoQuery = { short_name: 'sgyh.duoshuo.com' };
   (function() {
     var ds = document.createElement('script');
     ds.type = 'text/javascript';
